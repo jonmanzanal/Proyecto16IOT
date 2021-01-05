@@ -20,7 +20,7 @@ gpio1 = 22
 gpio2 = 24
 gpio3 = 26
 
-Objetos de GPIO de grove para el control
+#Objetos de GPIO de grove para el control
 vibrator1 = GPIO(gpio1, GPIO.OUT)
 vibrator2 = GPIO(gpio2, GPIO.OUT)
 vibrator3 = GPIO(gpio3, GPIO.OUT)
@@ -67,6 +67,13 @@ def on_message(client, userdata, msg):
             count_for_vibrator[i]+=1
         else:
             count_for_vibrator[i]=0
+    #Logica para el funcionamiento del giroscopio
+    if status[3]=='L' and count_for_vibrator[0]>0 and count_for_vibrator[2]>0:
+        count_for_vibrator[0]=8
+        count_for_vibrator[2]=4
+    elif status[3]=='R' and count_for_vibrator[0]>0 and count_for_vibrator[2]>0:
+        count_for_vibrator[0]=4
+        count_for_vibrator[2]=8    
 
 # Parametros para iniciar mqtt
 client = mqtt.Client()
