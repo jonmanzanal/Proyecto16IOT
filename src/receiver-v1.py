@@ -1,6 +1,7 @@
 #Importar librerias
 import time
-from grove.gpio import GPIO
+#from grove.gpio import GPIO
+import RPi.GPIO as GPIO
 import paho.mqtt.client as mqtt
 from datetime import datetime
 from influxdb_client import InfluxDBClient, Point, WritePrecision
@@ -20,13 +21,39 @@ gpio1 = 22
 gpio2 = 24
 gpio3 = 26
 
-#Objetos de GPIO de grove para el control
-vibrator1 = GPIO(gpio1, GPIO.OUT)
-vibrator2 = GPIO(gpio2, GPIO.OUT)
-vibrator3 = GPIO(gpio3, GPIO.OUT)
+#Objetos de GPIO simulando PWM para el control
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(gpio1,GPIO.OUT)
+GPIO.setup(gpio2,GPIO.OUT)
+GPIO.setup(gpio3,GPIO.OUT)
+vibrator1 = GPIO.PWM(gpio1, 100)
+vibrator2 = GPIO.PWM(gpio2, 100)
+vibrator3 = GPIO.PWM(gpio3, 100)
 
 #array para ahorrar tiempo al presionar cada sensor. Inicialmente cero, lo que significa que comienza a contar el tiempo después de que comienza el código
 count_for_vibrator=[0,0,0]
+
+#Iniciar los vibradores
+vibrator1.start(0)
+vibrator2.start(0)
+vibrator3.start(0)
+
+#Funcion par la vibracion segun tiempo
+def power (i):
+    switcher={
+        1: 8,
+        2: 16,
+        3: 24,
+        4: 32, 
+        5: 40,
+        6: 48,
+        7: 56,
+        8: 64,
+        9: 72,
+        10: 80
+    }
+    return switcher.get(i,5)
 
 # función para publicar datos en influxdb
 def post_to_influxDB():
@@ -41,17 +68,14 @@ def thread_function(vibrator,n):
     global count_for_vibrator
     while True:
         if count_for_vibrator[n]==0:
-            vibrator.write(0)
-        elif count_for_vibrator[n]<10:
-            vibrator.write(1)
-            time.sleep((10-count_for_vibrator[n])*0.1)
-            vibrator.write(0)
-            time.sleep((10-count_for_vibrator[n])*0.1)
+            vibrator.ChangeDutyCycle(0)
+        elif count_for_vibrator[n]<=10:
+            count = count_for_vibrator[n]
+            p = power(count)
+            vibrator.ChangeDutyCycle(p)
         else:
-            vibrator.write(1)
-            time.sleep(1)
-            vibrator.write(0)
-            time.sleep(1)
+            vibrator.ChangeDutyCycle(5)
+            
 # Se llama a la función cuando el cliente está conectado a mqtt broker / server
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
@@ -95,3 +119,5 @@ t3.start()
 t1.join()
 t2.join()
 t3.join()
+#Limpiar GPIOs
+GPIO.cleanup()
