@@ -110,9 +110,18 @@ Contributions are what make the open source community such an amazing place to b
 
 
 <!-- LICENSE -->
-## License
+## Bibliografia
 
-Distributed under the MIT License. See `LICENSE` for more information.
+* N. Crowley, «Getting Started with Python and InfluxDB», InfluxData, mar. 30, 2018. https://www.influxdata.com/blog/getting-started-python-influxdb/ .
+* «2 Simple Ways to Implement Python Switch Case Statement», DataFlair, jun. 01, 2018. https://data-flair.training/blogs/python-switch-case/.
+* «3.Python_RPi_2019.pdf». Disponible en: https://alud.deusto.es/pluginfile.php/1059875/mod_resource/content/1/3.Python_RPi_2019.pdf.
+* «Grove - Introduction in 3-Axis Digital Accelerometer», Hackster.io. https://www.hackster.io/ingo-lohs/grove-introduction-in-3-axis-digital-accelerometer-ea05c3.
+* «Lean Green RC Sailing Machine», Hackster.io. https://www.hackster.io/anemoi/lean-green-rc-sailing-machine-2cdde5.
+* «MQTT - The Standard for IoT Messaging». https://mqtt.org/ .
+* «Python - Functions - Tutorialspoint». https://www.tutorialspoint.com/python/python_functions.htm.
+* «Replacements for switch statement in Python?», Stack Overflow. https://stackoverflow.com/questions/60208/replacements-for-switch-statement-in-python.
+* «Seeed-Studio/grove.py», GitHub. https://github.com/Seeed-Studio/grove.py.
+
 
 
 
