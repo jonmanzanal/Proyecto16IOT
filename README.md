@@ -54,18 +54,18 @@ Para instalar el broker de MQTT, abrimos la terminal e ingresamos el siguiente c
   sudo apt-get install mosquitto
   ```  
 Para instalar las bibliotecas de cliente de mqtt para probar la conexión, ingresamos el siguiente comando.  
-  	 ```sh
-  	 sudo apt-get install mosquitto-clients
-      ```  
+  ```sh
+  sudo apt-get install mosquitto-clients
+  ```  
 Para probar el broker, abrimos 2 terminales e ingresamos los siguientes comandos en cada terminal para enlazarnos a un tema y publicar un mensaje.  
-  	 ```sh
-    	 mosquitto_sub –t test
-    	 mosquitto_pub –t test –m hi
-  	 ```  
+  ```sh
+  mosquitto_sub –t test
+  mosquitto_pub –t test –m hi
+  ```  
 Ingresamos el siguiente comando en la terminal para instalar la biblioteca cliente mqtt para python.  
-  	```sh
-    	sudo pip3 instalar paho-mqtt
-  	```  
+  ```sh
+  sudo pip3 instalar paho-mqtt
+  ```  
 
 2. Instalación libreria de grove.py  
 Ingresamos los siguiente comandos en la terminal para instalar la biblioteca de grove.  
