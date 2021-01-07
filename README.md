@@ -37,8 +37,7 @@ Estamos usando Raspberry Pi tanto en el lado emisor como en el receptor, ya que 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Para el funcionamiento del proyecto se necesitan unas determinadas librerías. Siga los siguientes pasos para su instalación.
 
 ### Instalación
 
