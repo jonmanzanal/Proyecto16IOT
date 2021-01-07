@@ -1,6 +1,7 @@
 #Importar librerias
 import time
 #from grove.gpio import GPIO
+from grove.grove_slide_potentiometer import GroveSlidePotentiometer
 import RPi.GPIO as GPIO
 import paho.mqtt.client as mqtt
 from datetime import datetime
@@ -15,6 +16,9 @@ bucket = "grupodaic16's Bucket"
 
 inFluxclient = InfluxDBClient(url="https://eu-central-1-1.aws.cloud2.influxdata.com", token=token)
 write_api = inFluxclient.write_api(write_options=SYNCHRONOUS)
+
+#Deslizador par controlar la potencia
+sensor = GroveSlidePotentiometer(0)
 
 #GPIOs que se utilizan para vibradores
 gpio1 = 22
@@ -38,7 +42,16 @@ count_for_vibrator=[0,0,0]
 vibrator1.start(0)
 vibrator2.start(0)
 vibrator3.start(0)
-
+#Funcion de reducir o aumnetar la vibracion
+def control(v):
+    count=1
+    if v < 333:
+        count=1
+    elif v > 333 and v < 666:
+        count=2
+    elif v > 666:
+        count=4
+    return count
 #Funcion par la vibracion segun tiempo
 def power (i):
     switcher={
@@ -66,15 +79,17 @@ def post_to_influxDB():
 #Función para hacer que cada motor vibre a una velocidad / frecuencia diferente
 def thread_function(vibrator,n):
     global count_for_vibrator
+    global sensor
     while True:
+        d=control(sensor.value)
         if count_for_vibrator[n]==0:
             vibrator.ChangeDutyCycle(0)
         elif count_for_vibrator[n]<=10:
             count = count_for_vibrator[n]
             p = power(count)
-            vibrator.ChangeDutyCycle(p)
+            vibrator.ChangeDutyCycle(p/d)
         else:
-            vibrator.ChangeDutyCycle(5)
+            vibrator.ChangeDutyCycle(8/d)
             
 # Se llama a la función cuando el cliente está conectado a mqtt broker / server
 def on_connect(client, userdata, flags, rc):
