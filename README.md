@@ -79,8 +79,7 @@ To get a local copy up and running follow these simple example steps.
    ```  
       
 3. Instalación librería de influxdb_client  
-   Necesitamos la biblioteca cliente influxdb para publicar los datos en la base de datos de Python. Ingresamos el siguiente comando en la terminal para instalar la biblioteca   
-   influxdb_client.  
+   Necesitamos la biblioteca cliente influxdb para publicar los datos en la base de datos de Python. Ingresamos el siguiente comando en la terminal para instalar la libreria influxdb_client.  
    ```sh
    sudo pip3 install influxdb_client
    ```  
