@@ -24,8 +24,7 @@
 <!-- ACERCA DEL PROYECTO -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://www.skillthon.com/wp-content/uploads/2017/10/rpiiot-300x225.jpg)
-
+![iot](https://user-images.githubusercontent.com/43879255/103910351-05449880-5105-11eb-99d7-0b70c2049883.jpeg)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
