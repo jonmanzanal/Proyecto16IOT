@@ -54,21 +54,45 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+### Instalación
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Instalación Mosquitto Broker.
+
+Para instalar el broker de MQTT, abrimos la terminal e ingresamos el siguiente comando.
+       	```sh
+        sudo apt-get install mosquitto
+       	```
+Para instalar las bibliotecas de cliente de mqtt para probar la conexión, ingresamos el siguiente comando.
+  	 ```sh
+  	 sudo apt-get install mosquitto-clients
+      ```
+Para probar el broker, abrimos 2 terminales e ingresamos los siguientes comandos en cada terminal para enlazarnos a un tema y publicar un mensaje.
+  	 ```sh
+    	 mosquitto_sub –t test
+    	 mosquitto_pub –t test –m hi
+  	 ```
+Ingresamos el siguiente comando en la terminal para instalar la biblioteca cliente mqtt para python.
+  	```sh
+    	sudo pip3 instalar paho-mqtt
+  	```
+
+2. Instalación libreria de grove.py
+Ingresamos los siguiente comandos en la terminal para instalar la biblioteca de grove.
+     ```sh
+      	git clone https://github.com/Seeed-Studio/grove.py
+      	cd grove.py
+       	# Python2
+       	sudo pip install .
+      	# Python3
+       	sudo pip3 install .
+     ```
+      
+3. Instalación librería de influxdb_client 
+Necesitamos la biblioteca cliente influxdb para publicar los datos en la base de datos de Python. Ingresamos el siguiente comando en la terminal para instalar la biblioteca influxdb_client.
+     ```sh
+   	 sudo pip3 install influxdb_client
+    ```
+
 
 
 
