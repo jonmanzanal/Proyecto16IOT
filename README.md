@@ -26,16 +26,10 @@
 
 ![iot](https://user-images.githubusercontent.com/43879255/103910351-05449880-5105-11eb-99d7-0b70c2049883.jpeg)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+Se propone una solución que utiliza un sistema de control remoto basado en Internet de las cosas (IoT) a través de una red Wi-Fi para simular un apretón de manos, que comprende el control remoto de los motores de vibración en función de los datos que se obtienen a partir de una serie de sensores táctiles capacitivos y un giroscopio. En lugar de usar Bluetooth o un enfoque por cable, estamos usando Wi-Fi para una conexión rápida, confiable y de largo alcance a través de Internet.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+Estamos usando Raspberry Pi tanto en el lado emisor como en el receptor, ya que se consume muy poca energía y tiene Wi-Fi incorporado. La solución propuesta se basa en utilizar el protocolo MQTT para el paso de mensajes de máquina a máquina. MQTT es un protocolo ligero con el encabezado TCP más corto y ayuda a lograr una conmutación en tiempo real y un bajo consumo de energía al mismo tiempo.
 
 ### Built With
 
