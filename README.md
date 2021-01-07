@@ -22,7 +22,7 @@
 
 
 <!-- ACERCA DEL PROYECTO -->
-## About The Project
+## Acerca del Proyecto
 
 ![iot](https://user-images.githubusercontent.com/43879255/103910351-05449880-5105-11eb-99d7-0b70c2049883.jpeg)
 
