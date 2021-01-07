@@ -49,20 +49,20 @@ To get a local copy up and running follow these simple example steps.
 ### Instalación
 
 1. Instalación Mosquitto Broker.  
-Para instalar el broker de MQTT, abrimos la terminal e ingresamos el siguiente comando.
-  ```sh
-  sudo apt-get install mosquitto
-  ```  
-Para instalar las bibliotecas de cliente de mqtt para probar la conexión, ingresamos el siguiente comando.  
+   Para instalar el broker de MQTT, abrimos la terminal e ingresamos el siguiente comando.
+   ```sh
+   sudo apt-get install mosquitto
+   ```  
+  Para instalar las bibliotecas de cliente de mqtt para probar la conexión, ingresamos el siguiente comando.  
   ```sh
   sudo apt-get install mosquitto-clients
   ```  
-Para probar el broker, abrimos 2 terminales e ingresamos los siguientes comandos en cada terminal para enlazarnos a un tema y publicar un mensaje.  
+  Para probar el broker, abrimos 2 terminales e ingresamos los siguientes comandos en cada terminal para enlazarnos a un tema y publicar un mensaje.  
   ```sh
   mosquitto_sub –t test
   mosquitto_pub –t test –m hi
   ```  
-Ingresamos el siguiente comando en la terminal para instalar la biblioteca cliente mqtt para python.  
+  Ingresamos el siguiente comando en la terminal para instalar la biblioteca cliente mqtt para python.  
   ```sh
   sudo pip3 instalar paho-mqtt
   ```  
