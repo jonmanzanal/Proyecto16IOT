@@ -80,10 +80,16 @@ Para el funcionamiento del proyecto se necesitan unas determinadas librerías. S
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+## Funcionalidad
+
+Para probar la funcionalidad del proyecto, deberemos iniciar en un raspberry pi el programa llamado _receiver-v1.py_ y en la otra raspberry pi el programa _sender-v1.py_.
+Comprobamos que los programas se han iniciado correctamente y tocamos un sensor háptico. Según cuanto tiempo pulsemos vibrara el actuador en la raspberry, la vibración va aumentando en 8.  
+
+Para probar el giroscopio se deberá tocar los sensores que estén más a la izquierda y derecha, luego a mover el giroscopio vibrara más un actuador u otro según hacia donde lo movamos.  
+
+Para controlar la vibración de los actuadores, podemos utilizar el deslizador. Si situamos el deslizador a un valor cercano a 0 (gdd) la vibración será más intensa, si lo movemos hacia el medio la vibración será la mitad y si lo movemos hasta el final (vcc) la vibración se reducirá por cuatro.
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
