@@ -53,36 +53,37 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    sudo apt-get install mosquitto
    ```  
-  Para instalar las bibliotecas de cliente de mqtt para probar la conexión, ingresamos el siguiente comando.  
-  ```sh
-  sudo apt-get install mosquitto-clients
-  ```  
-  Para probar el broker, abrimos 2 terminales e ingresamos los siguientes comandos en cada terminal para enlazarnos a un tema y publicar un mensaje.  
-  ```sh
-  mosquitto_sub –t test
-  mosquitto_pub –t test –m hi
-  ```  
-  Ingresamos el siguiente comando en la terminal para instalar la biblioteca cliente mqtt para python.  
-  ```sh
-  sudo pip3 instalar paho-mqtt
-  ```  
+   Para instalar las bibliotecas de cliente de mqtt para probar la conexión, ingresamos el siguiente comando.  
+   ```sh
+   sudo apt-get install mosquitto-clients
+   ```  
+   Para probar el broker, abrimos 2 terminales e ingresamos los siguientes comandos en cada terminal para enlazarnos a un tema y publicar un mensaje.  
+   ```sh
+   mosquitto_sub –t test
+   mosquitto_pub –t test –m hi
+   ```  
+   Ingresamos el siguiente comando en la terminal para instalar la biblioteca cliente mqtt para python.  
+   ```sh
+   sudo pip3 instalar paho-mqtt
+   ```  
 
 2. Instalación libreria de grove.py  
-Ingresamos los siguiente comandos en la terminal para instalar la biblioteca de grove.  
-     ```sh
-      	git clone https://github.com/Seeed-Studio/grove.py
-      	cd grove.py
-       	# Python2
-       	sudo pip install .
-      	# Python3
-       	sudo pip3 install .
-     ```  
+   Ingresamos los siguiente comandos en la terminal para instalar la biblioteca de grove.  
+   ```sh
+   git clone https://github.com/Seeed-Studio/grove.py
+   cd grove.py
+   # Python2
+   sudo pip install .
+   # Python3
+   sudo pip3 install .
+   ```  
       
 3. Instalación librería de influxdb_client  
-Necesitamos la biblioteca cliente influxdb para publicar los datos en la base de datos de Python. Ingresamos el siguiente comando en la terminal para instalar la biblioteca influxdb_client.  
-     ```sh
-   	 sudo pip3 install influxdb_client
-    ```  
+   Necesitamos la biblioteca cliente influxdb para publicar los datos en la base de datos de Python. Ingresamos el siguiente comando en la terminal para instalar la biblioteca   
+   influxdb_client.  
+   ```sh
+   sudo pip3 install influxdb_client
+   ```  
 
 
 
