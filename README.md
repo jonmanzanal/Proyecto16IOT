@@ -46,22 +46,14 @@ This section should list any major frameworks that you built your project using.
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Instalación
 
 1. Instalación Mosquitto Broker.
-
 Para instalar el broker de MQTT, abrimos la terminal e ingresamos el siguiente comando.
-       	```sh
-        sudo apt-get install mosquitto
-       	```
+  ```sh
+  sudo apt-get install mosquitto
+  
+  ```
 Para instalar las bibliotecas de cliente de mqtt para probar la conexión, ingresamos el siguiente comando.
   	 ```sh
   	 sudo apt-get install mosquitto-clients
