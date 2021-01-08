@@ -97,20 +97,15 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
 <!-- CONTRIBUTING -->
-## Contributing
-
+## Autores y forma de trabajo ✒️
 
 **DAIC Grupo16:**
 * **Jon Manzanal** 
 * **Javier Martin Aizpuru**
+
+El desarrollo del código del proyecto lo hemos realizado conjuntamente mediante Discord ya que las caractéristicas del proyecto implicaban que alguien tenía que tener las 2 Raspberry en la misma red para poder hacer las pruebas y comprobar que la funcionalidad fuera la correcta. Para realizar los commits respectivos al código hemos utilizado en las Raspberry sólo una cuenta de Github (jonmanzanal), pero hemos desarrollado el código conjuntamente.
+
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/jonmanzanal/daicgrupo16/contributors) que han participado en este proyecto.
 
