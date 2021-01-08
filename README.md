@@ -107,13 +107,12 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+**DAIC Grupo16:**
+* **Jon Manzanal** 
+* **Javier Martin Aizpuru**
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/jonmanzanal/daicgrupo16/contributors) que han participado en este proyecto.
 
 
 
@@ -130,15 +129,6 @@ Contributions are what make the open source community such an amazing place to b
 * «Replacements for switch statement in Python?», Stack Overflow. https://stackoverflow.com/questions/60208/replacements-for-switch-statement-in-python.
 * «Seeed-Studio/grove.py», GitHub. https://github.com/Seeed-Studio/grove.py.
 
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 
 
