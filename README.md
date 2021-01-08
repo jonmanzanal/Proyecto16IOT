@@ -87,6 +87,10 @@ Para el funcionamiento del proyecto se necesitan unas determinadas librerías. S
 Para probar la funcionalidad del proyecto, deberemos iniciar en una Raspberry Pi el programa llamado _receiver-v1.py_ y en la otra Raspberry Pi el programa _sender-v1.py_.
 Comprobamos que los programas se han iniciado correctamente y tocamos un sensor háptico. Al pulsar el sensor se mandará una "H" lo cual significa que esta pulsado sino mandará una "L". Según cuanto tiempo pulsemos vibrara el actuador en la raspberry, la vibración sera mayor o menor, aumentando en 8 unidades por cada segundo pulsado. Cada sensor actuará sobre un motor, el sensor de la izquierda actuá sobre el motor de la izquierda, lo mismo con los sensores del centro y de la derecha. 
 
+![MotorVib_Rasp2](https://user-images.githubusercontent.com/43879255/104036583-dcd79f80-51d3-11eb-8e26-df91f97acd7d.png)
+![Sensors_Rasp1](https://user-images.githubusercontent.com/43879255/104036590-dfd29000-51d3-11eb-9297-a35e0e02ce01.png)
+
+
 Para probar el giroscopio se deberá mantener pulsado los sensores de los extremos (izquierda y derecha), luego al mover el giroscopio vibrará más un actuador u otro según hacia donde lo movamos.  
 
 Para controlar la vibración de los actuadores, podemos utilizar el deslizador. Si situamos el deslizador a un valor cercano a 0 (gnd) la vibración será más intensa, si lo movemos hacia el medio la vibración será la mitad y si lo movemos hasta el final (vcc) la vibración se reducirá por cuatro.
