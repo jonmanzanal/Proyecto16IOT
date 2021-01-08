@@ -81,8 +81,6 @@ Para el funcionamiento del proyecto se necesitan unas determinadas librerías. S
 
 
 
-
-
 ## Funcionalidad
 
 Para probar la funcionalidad del proyecto, deberemos iniciar en un raspberry pi el programa llamado _receiver-v1.py_ y en la otra raspberry pi el programa _sender-v1.py_.
@@ -123,24 +121,6 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 * «Python - Functions - Tutorialspoint». https://www.tutorialspoint.com/python/python_functions.htm.
 * «Replacements for switch statement in Python?», Stack Overflow. https://stackoverflow.com/questions/60208/replacements-for-switch-statement-in-python.
 * «Seeed-Studio/grove.py», GitHub. https://github.com/Seeed-Studio/grove.py.
-
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
 
 
 
