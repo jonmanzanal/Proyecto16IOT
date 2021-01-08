@@ -33,6 +33,8 @@ Se propone una solución que utiliza un sistema de control remoto basado en Inte
 
 Estamos usando Raspberry Pi tanto en el lado emisor como en el receptor, ya que se consume muy poca energía y tiene Wi-Fi incorporado. La solución propuesta se basa en utilizar el protocolo MQTT para el paso de mensajes de máquina a máquina. MQTT es un protocolo ligero con el encabezado TCP más corto y ayuda a lograr una conmutación en tiempo real y un bajo consumo de energía al mismo tiempo.
 
+Simultáneamente, se publican a una base de datos de InfluxDB los datos de los sensores, concretamente el tiempo por pulso de cada uno de los sensores.  
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
