@@ -86,7 +86,7 @@ Para el funcionamiento del proyecto se necesitan unas determinadas librerías. S
 ## Funcionalidad
 
 Para probar la funcionalidad del proyecto, deberemos iniciar en un raspberry pi el programa llamado _receiver-v1.py_ y en la otra raspberry pi el programa _sender-v1.py_.
-Comprobamos que los programas se han iniciado correctamente y tocamos un sensor háptico. Según cuanto tiempo pulsemos vibrara el actuador en la raspberry, la vibración va aumentando en 8.  
+Comprobamos que los programas se han iniciado correctamente y tocamos un sensor háptico. Al pulsar el sensor se mandara una "H" lo cual significa que esta pulsado sino mandara "L".Según cuanto tiempo pulsemos vibrara el actuador en la raspberry, la vibración sera mayor o menor, aumentando en 8 por cada segundo pulsado.  
 
 Para probar el giroscopio se deberá tocar los sensores que estén más a la izquierda y derecha, luego a mover el giroscopio vibrara más un actuador u otro según hacia donde lo movamos.  
 
