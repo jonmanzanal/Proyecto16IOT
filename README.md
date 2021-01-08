@@ -6,7 +6,7 @@
   <summary>Tabla de Contenidos</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Acerca del Proyecto</a>
+      <a href="#acerca-del-proyecto">Acerca del Proyecto</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -15,7 +15,7 @@
       </ul>
     </li>
     <li><a href="#funcionalidad">Funcionalidad</a></li>
-    <li><a href="#autores-y-forma-de-trabajo">Contribuyendo</a></li>
+    <li><a href="#autores-y-forma-de-trabajo-%EF%B8%8F">Contribuyendo</a></li>
     <li><a href="#bibliografía">Bibliografía</a></li>
     <li><a href="#wiki">Wiki</a></li>
   </ol>
@@ -122,7 +122,7 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 
 
 
-<!-- LICENSE -->
+<!-- BIBLIOGRAFIA -->
 ## Bibliografía
 
 * N. Crowley, «Getting Started with Python and InfluxDB», InfluxData, mar. 30, 2018. https://www.influxdata.com/blog/getting-started-python-influxdb/ .
@@ -135,8 +135,9 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 * «Replacements for switch statement in Python?», Stack Overflow. https://stackoverflow.com/questions/60208/replacements-for-switch-statement-in-python.
 * «Seeed-Studio/grove.py», GitHub. https://github.com/Seeed-Studio/grove.py.
 
-
-
+<!-- Wiki -->
+## Wiki
+_Para mayor información, es posible consultar la Wiki [Documentation](https://github.com/jonmanzanal/daicgrupo16/wiki)_
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
