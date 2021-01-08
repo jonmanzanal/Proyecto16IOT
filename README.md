@@ -11,12 +11,12 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#instalacion">Instalación</a></li>
+        <li><a href="#instalación">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Funcionalidad</a></li>
-    <li><a href="#contributing">Contribuyendo</a></li>
-    <li><a href="#bib">Bibliografía</a></li>
+    <li><a href="#funcionalidad">Funcionalidad</a></li>
+    <li><a href="#autores-y-forma-de-trabajo">Contribuyendo</a></li>
+    <li><a href="#bibliografía">Bibliografía</a></li>
     <li><a href="#wiki">Wiki</a></li>
   </ol>
 </details>
@@ -102,7 +102,7 @@ Durante la ejecución de los scripts mencionados arriba, la parte receptora va p
 Los campos que se almacenan son los siguientes:
 * **Start_time,stop_time y time**: Son variables autogeneradas por influxDB, la única relevante en nuestro caso es time, indica la hora de la publicación a la BD.
 * **Field**: Nombre de la variable, en este caso hace referencia a los sensores (sensor1, sensor2, sensor3)
-* **Value**: Tiempo de pulso del sensor.
+* **Value**: Tiempo de pulsación del sensor.
 
 _Para mayor información, es posible consultar la Wiki [Documentation](https://github.com/jonmanzanal/daicgrupo16/wiki)_
 
@@ -123,7 +123,7 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 
 
 <!-- LICENSE -->
-## Bibliografia
+## Bibliografía
 
 * N. Crowley, «Getting Started with Python and InfluxDB», InfluxData, mar. 30, 2018. https://www.influxdata.com/blog/getting-started-python-influxdb/ .
 * «2 Simple Ways to Implement Python Switch Case Statement», DataFlair, jun. 01, 2018. https://data-flair.training/blogs/python-switch-case/.
