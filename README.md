@@ -97,7 +97,12 @@ Durante la ejecución de los scripts mencionados arriba, la parte receptora va p
 
 ![Sens3](https://user-images.githubusercontent.com/43879255/104035405-61c1b980-51d2-11eb-9170-50745e36e413.JPG)
 
-_Para mayor información, es posible consultar la Wiki [Documentation](https://www.google.es)_
+Los campos que se almacenan son los siguientes:
+* **Start_time,stop_time y time**: Son variables autogeneradas por influxDB, la única relevante en nuestro caso es time, indica la hora de la publicación a la BD.
+* **Field**: Nombre de la variable, en este caso hace referencia a los sensores (sensor1, sensor2, sensor3)
+* **Value**: Tiempo de pulso del sensor.
+
+_Para mayor información, es posible consultar la Wiki [Documentation](https://github.com/jonmanzanal/daicgrupo16/wiki)_
 
 
 
