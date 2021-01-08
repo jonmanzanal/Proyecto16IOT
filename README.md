@@ -83,6 +83,7 @@ Para el funcionamiento del proyecto se necesitan unas determinadas librerías. S
 
 ## Funcionalidad
 
+**Parte funcional:**
 Para probar la funcionalidad del proyecto, deberemos iniciar en una Raspberry Pi el programa llamado _receiver-v1.py_ y en la otra Raspberry Pi el programa _sender-v1.py_.
 Comprobamos que los programas se han iniciado correctamente y tocamos un sensor háptico. Al pulsar el sensor se mandará una "H" lo cual significa que esta pulsado sino mandará una "L".Según cuanto tiempo pulsemos vibrara el actuador en la raspberry, la vibración sera mayor o menor, aumentando en 8 unidades por cada segundo pulsado. Cada sensor actuará sobre un motor, el sensor de la izquierda actuá sobre el motor de la izquierda, lo mismo con los sensores del centro y de la derecha. 
 
@@ -90,6 +91,11 @@ Para probar el giroscopio se deberá mantener pulsado los sensores de los extrem
 
 Para controlar la vibración de los actuadores, podemos utilizar el deslizador. Si situamos el deslizador a un valor cercano a 0 (gnd) la vibración será más intensa, si lo movemos hacia el medio la vibración será la mitad y si lo movemos hasta el final (vcc) la vibración se reducirá por cuatro.
 
+
+**Publicación de datos:**
+Durante la ejecución de los scripts mencionados arriba, la parte receptora va publicando los datos a la base de datos de InfluxDB. En la siguiente imagen se muestra la estructura y los campos que se almacenan, en este caso para el sensor3.
+
+![Sens3](https://user-images.githubusercontent.com/43879255/104035405-61c1b980-51d2-11eb-9170-50745e36e413.JPG)
 
 _Para mayor información, es posible consultar la Wiki [Documentation](https://www.google.es)_
 
