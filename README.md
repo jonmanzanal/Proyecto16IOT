@@ -100,7 +100,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 **DAIC Grupo16:**
 * **Jon Manzanal** 
-* **Javier Martin Aizpuru**
+* **Javier Martín**
 
 El desarrollo del código del proyecto lo hemos realizado conjuntamente mediante Discord ya que las caractéristicas del proyecto implicaban que alguien tenía que tener las 2 Raspberry en la misma red para poder hacer las pruebas y comprobar que la funcionalidad fuera la correcta. Para realizar los commits respectivos al código hemos utilizado en las Raspberry sólo una cuenta de Github (jonmanzanal), pero hemos desarrollado el código conjuntamente.
 
