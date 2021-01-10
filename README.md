@@ -133,7 +133,10 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 * «MQTT - The Standard for IoT Messaging». https://mqtt.org/ .
 * «Python - Functions - Tutorialspoint». https://www.tutorialspoint.com/python/python_functions.htm.
 * «Replacements for switch statement in Python?», Stack Overflow. https://stackoverflow.com/questions/60208/replacements-for-switch-statement-in-python.
-* «Seeed-Studio/grove.py», GitHub. https://github.com/Seeed-Studio/grove.py.
+* «Seeed-Studio/grove.py», GitHub. https://github.com/Seeed-Studio/grove.py.  
+* «Python Code für Gyroscope ITG-3200», Deutsches Raspberry Pi Forum. https://forum-raspberrypi.de/forum/thread/22262-python-code-fuer-gyroscope-itg-3200/
+
+
 
 <!-- Wiki -->
 ## Wiki
