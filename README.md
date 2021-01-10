@@ -18,6 +18,7 @@
     <li><a href="#autores-y-forma-de-trabajo-%EF%B8%8F">Contribuyendo</a></li>
     <li><a href="#bibliografía">Bibliografía</a></li>
     <li><a href="#wiki">Wiki</a></li>
+    <li><a href="#video">Video</a></li>
   </ol>
 </details>
 
@@ -141,6 +142,11 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 <!-- Wiki -->
 ## Wiki
 _Para mayor información, es posible consultar la Wiki [Documentation](https://github.com/jonmanzanal/daicgrupo16/wiki)_
+
+
+
+## Video
+_Enlace al vídeo  [Video](https://www.youtube.com/watch?v=CRSLjilWv4w&t=6s)_
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
